@@ -5,16 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Base Apparel coming soon page</title>
 </head>
 
 <body>
-  We're coming soon
+  <main>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </div>
 
-  Hello fellow shoppers! We're currently building our new fashion store.
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <picture class="hero-image">
+      <source media="(max-width: 499px)" srcset="./images/hero-mobile.jpg">
+      <source media="(min-width: 500px)" srcset="./images/hero-desktop.jpg">
+      <img src="./images/hero-mobile.jpg" alt="Hero Image">
+    </picture>
 
-  Email Address
+    <h1 class="main-title">We're coming soon</h1>
+
+    <p class="main text">Hello fellow shoppers! We're currently building our new fashion store.
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+    <form action="">
+      <label for="email">
+        <input type="email" name="email" id="email" placeholder="Emain Adrress">
+        <img src="./images/icon-error.svg" alt="Error Icon">
+      </label>
+      <button type="submit">
+        <img src="./images/icon-arrow.svg" alt="Arrow Icon">
+      </button>
+      <span class="error-message">Please provide a valid email</span>
+    </form>
+  </main>
 </body>
 
 </html>
