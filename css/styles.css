@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(135deg, white, #fff5f5);
+  min-height: 100vh; }
+
+/*# sourceMappingURL=styles.css.map */

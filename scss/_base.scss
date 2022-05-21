@@ -1,0 +1,29 @@
+// colors
+$red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$gray-red: hsl(0, 6%, 24%);
+
+// gradient
+$white-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$red-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+// font
+$body-font: "Josefin Sans", sans-serif;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $body-font;
+	background: $white-gradient;
+	min-height: 100vh;
+}
