@@ -1,0 +1,87 @@
+.logo {
+	padding: 2rem;
+
+	img {
+		max-width: 100px;
+	}
+}
+
+.content {
+	text-align: center;
+	padding: 3rem 2rem;
+
+	&-title {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 2.25rem;
+		color: $gray-red;
+		max-width: 250px;
+		letter-spacing: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.title-highlight {
+		color: $red;
+		font-weight: 300;
+	}
+
+	&-text {
+		margin-top: 1rem;
+		margin-bottom: 1.5rem;
+		line-height: 1.4;
+		font-size: 0.9rem;
+		color: $red;
+	}
+}
+
+#email {
+	width: 100%;
+	padding: 0.75rem 0.75rem;
+	padding-right: 80px;
+	background-color: transparent;
+	outline: none;
+	border: 2px solid $red;
+	color: $gray-red;
+	border-radius: 50px;
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+#email:focus {
+	border-color: $soft-red;
+}
+
+.form-group {
+	position: relative;
+}
+
+.error-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 75px;
+	width: 20px;
+	height: 20px;
+	display: none;
+}
+
+.submit-btn {
+	border: none;
+	background: $red-gradient;
+	padding: 0.5rem 1.75rem;
+	height: 44px;
+	border-radius: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+}
+
+.error-message {
+	margin-top: 1rem;
+	color: $soft-red;
+	font-size: 0.875rem;
+}
