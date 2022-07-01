@@ -6,6 +6,12 @@
 	}
 }
 
+.hero-image {
+	img {
+		width: 100%;
+	}
+}
+
 .content {
 	text-align: center;
 	padding: 3rem 2rem;
@@ -41,13 +47,18 @@
 	padding-right: 80px;
 	background-color: transparent;
 	outline: none;
-	border: 2px solid $red;
+	border: 2px solid $gray-red-opacity;
 	color: $gray-red;
 	border-radius: 50px;
 	position: relative;
 	top: 0;
 	right: 0;
 	left: 0;
+	font-family: inherit;
+}
+
+#email::placeholder {
+	color: $gray-red-opacity;
 }
 
 #email:focus {
@@ -71,7 +82,7 @@
 .submit-btn {
 	border: none;
 	background: $red-gradient;
-	padding: 0.5rem 1.75rem;
+	padding: 0.5rem 1.5rem;
 	height: 44px;
 	border-radius: 50px;
 	position: absolute;
@@ -84,4 +95,5 @@
 	margin-top: 1rem;
 	color: $soft-red;
 	font-size: 0.875rem;
+	display: none;
 }
