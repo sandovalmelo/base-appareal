@@ -1,5 +1,5 @@
 .logo-container {
-	padding: 2rem;
+	padding: 2rem 2rem;
 
 	img {
 		max-width: 100px;
@@ -21,7 +21,6 @@
 		font-weight: 600;
 		font-size: 2.25rem;
 		color: $gray-red;
-		max-width: 250px;
 		letter-spacing: 10px;
 		margin-left: auto;
 		margin-right: auto;
@@ -36,14 +35,14 @@
 		margin-top: 1rem;
 		margin-bottom: 1.5rem;
 		line-height: 1.4;
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 		color: $red;
 	}
 }
 
 #email {
 	width: 100%;
-	padding: 0.75rem 0.75rem;
+	padding: 0.85rem 0.75rem;
 	padding-right: 80px;
 	background-color: transparent;
 	outline: none;
@@ -55,14 +54,14 @@
 	right: 0;
 	left: 0;
 	font-family: inherit;
-}
 
-#email::placeholder {
-	color: $gray-red-opacity;
-}
+	&::placeholder {
+		color: $gray-red-opacity;
+	}
 
-#email:focus {
-	border-color: $soft-red;
+	&:focus {
+		border-color: $soft-red;
+	}
 }
 
 .form-group {
@@ -82,7 +81,7 @@
 .submit-btn {
 	border: none;
 	background: $red-gradient;
-	padding: 0.5rem 1.5rem;
+	padding: 0.7rem 1.5rem;
 	height: 44px;
 	border-radius: 50px;
 	position: absolute;
@@ -98,6 +97,52 @@
 	display: none;
 }
 
+@media (min-height: 813px) and (orientation: portrait) {
+	.content {
+		&-container {
+			max-width: 500px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&-title {
+			font-size: 3rem;
+		}
+
+		&-text {
+			font-size: 1.15rem;
+		}
+	}
+}
+
+@media (min-height: 998px) and (orientation: portrait) {
+	.content {
+		&-title {
+			font-size: 3.5rem;
+		}
+
+		&-text {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+@media (min-height: 1200px) and (orientation: portrait) {
+	.content {
+		&-container {
+			max-width: 37rem;
+		}
+
+		&-title {
+			font-size: 4rem;
+		}
+
+		&-text {
+			font-size: 1.75rem;
+		}
+	}
+}
+
 @media (min-width: 568px) and (orientation: landscape) {
 	main {
 		display: grid;
@@ -109,11 +154,20 @@
 	.logo-container {
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
+		padding: 0rem 2rem;
+		display: flex;
+		align-items: center;
 	}
 
 	.hero-image {
 		grid-column: 2 / 3;
 		grid-row: 1 / 3;
+
+		img {
+			min-height: 100vh;
+			object-fit: cover;
+			object-position: top center;
+		}
 	}
 
 	.content {
@@ -131,47 +185,44 @@
 
 	.logo-container {
 		padding: 0;
-		display: flex;
-		align-items: center;
 		justify-content: center;
+
+		.logo {
+			max-width: 400px;
+			flex: 1;
+		}
+
+		img {
+			width: 150px;
+			max-width: 100%;
+		}
 	}
 
-	.logo {
-		max-width: 400px;
-		flex: 1;
-	}
-
-	.logo-container img {
-		width: 150px;
-		max-width: 100%;
-	}
-
-	.hero-image img {
-		height: 100vh;
-		object-fit: cover;
-		object-position: top center;
+	.hero-image {
+		img {
+			height: 100vh;
+		}
 	}
 
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		// justify-content: center;
 		text-align: left;
 		padding: 0;
 		padding-top: 4rem;
-	}
 
-	.content-container {
-		max-width: 400px;
-	}
+		&-container {
+			max-width: 400px;
+		}
 
-	.content-title {
-		font-size: 4rem;
-		max-width: 100%;
-	}
+		&-title {
+			font-size: 4rem;
+			max-width: 100%;
+		}
 
-	.content-text {
-		font-size: 1rem;
+		&-text {
+			font-size: 1rem;
+		}
 	}
 }
