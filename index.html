@@ -14,32 +14,36 @@
 
 <body>
   <main>
-    <div class="logo">
-      <img src="./images/logo.svg" alt="Logo">
+    <div class="logo-container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo">
+      </div>
     </div>
 
     <picture class="hero-image">
       <source media="(max-width: 567px)" srcset="./images/hero-mobile.jpg">
-      <source media="(min-width: 568px)" srcset="./images/hero-desktop.jpg">
+      <source media="(min-width: 568px) and (orientation: landscape)" srcset="./images/hero-desktop.jpg">
       <img src="./images/hero-mobile.jpg" alt="Hero Image">
     </picture>
 
     <section class="content">
-      <h1 class="content-title"><span class="title-highlight">We're</span> coming soon</h1>
+      <div class="content-container">
+        <h1 class="content-title"><span class="title-highlight">We're</span> coming soon</h1>
 
-      <p class="content-text">Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <p class="content-text">Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <form>
-        <div class="form-group">
-          <input type="email" name="email" id="email" placeholder="Email Adrress">
-          <img src="./images/icon-error.svg" alt="Error Icon" class="error-icon">
-          <button type="submit" class="submit-btn">
-            <img src="./images/icon-arrow.svg" alt="Arrow Icon">
-          </button>
-        </div>
-        <p class="error-message">Please provide a valid email</p>
-      </form>
+        <form>
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Email Adrress">
+            <img src="./images/icon-error.svg" alt="Error Icon" class="error-icon">
+            <button type="submit" class="submit-btn">
+              <img src="./images/icon-arrow.svg" alt="Arrow Icon">
+            </button>
+          </div>
+          <p class="error-message">Please provide a valid email</p>
+        </form>
+      </div>
     </section>
   </main>
 </body>

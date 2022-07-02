@@ -1,4 +1,4 @@
-.logo {
+.logo-container {
 	padding: 2rem;
 
 	img {
@@ -96,4 +96,82 @@
 	color: $soft-red;
 	font-size: 0.875rem;
 	display: none;
+}
+
+@media (min-width: 568px) and (orientation: landscape) {
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 5rem auto;
+		overflow: hidden;
+	}
+
+	.logo-container {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+
+	.hero-image {
+		grid-column: 2 / 3;
+		grid-row: 1 / 3;
+	}
+
+	.content {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		padding: 1rem 2rem;
+	}
+}
+
+@media (min-width: 968px) and (orientation: landscape) {
+	main {
+		grid-template-columns: 55% 45%;
+		grid-template-rows: 8rem auto;
+	}
+
+	.logo-container {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo {
+		max-width: 400px;
+		flex: 1;
+	}
+
+	.logo-container img {
+		width: 150px;
+		max-width: 100%;
+	}
+
+	.hero-image img {
+		height: 100vh;
+		object-fit: cover;
+		object-position: top center;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: center;
+		text-align: left;
+		padding: 0;
+		padding-top: 4rem;
+	}
+
+	.content-container {
+		max-width: 400px;
+	}
+
+	.content-title {
+		font-size: 4rem;
+		max-width: 100%;
+	}
+
+	.content-text {
+		font-size: 1rem;
+	}
 }
