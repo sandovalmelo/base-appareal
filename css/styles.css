@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  background: linear-gradient(135deg, white, #fff5f5); }
+  background: linear-gradient(135deg, #fff5f5, white); }
 
 img {
   display: block; }
@@ -144,8 +144,8 @@ img {
   .submit-btn {
     cursor: pointer; }
     .submit-btn:hover {
-      background: #e4b4b4;
-      box-shadow: 2px 4px 10px 3px rgba(223, 165, 165, 0.6); } }
+      background: linear-gradient(#fcd8d8, #f7cbcb);
+      box-shadow: 0px 10px 28px -4px rgba(249, 98, 98, 0.6); } }
 @media (min-width: 968px) and (orientation: landscape) {
   main {
     grid-template-rows: 8rem auto; }
@@ -184,11 +184,11 @@ img {
 
   .error-icon {
     display: block;
-    right: 85px; }
+    right: 90px; }
 
   .submit-btn {
-    height: 47.2px;
-    padding: 0 2rem; } }
+    height: 48px;
+    padding: 0 2.15rem; } }
 @media (min-width: 1200px) and (orientation: landscape) {
   main {
     grid-template-columns: 1fr auto; }
