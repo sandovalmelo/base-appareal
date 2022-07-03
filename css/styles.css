@@ -44,6 +44,9 @@ img {
     font-size: 0.85rem;
     color: #ce9797; }
 
+.form-group {
+  position: relative; }
+
 #email {
   width: 100%;
   padding: 0.85rem 0.75rem;
@@ -63,9 +66,6 @@ img {
   #email:focus {
     border-color: #f96262; }
 
-.form-group {
-  position: relative; }
-
 .error-icon {
   position: absolute;
   top: 50%;
@@ -78,7 +78,7 @@ img {
 .submit-btn {
   border: none;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
-  padding: 0.7rem 1.5rem;
+  padding: 0 1.5rem;
   height: 44px;
   border-radius: 50px;
   position: absolute;
@@ -116,7 +116,7 @@ img {
 @media (min-width: 568px) and (orientation: landscape) {
   main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
     grid-template-rows: 5rem auto;
     overflow: hidden; }
 
@@ -132,16 +132,22 @@ img {
     grid-row: 1 / 3; }
     .hero-image img {
       min-height: 100vh;
+      height: 100%;
       object-fit: cover;
       object-position: top center; }
 
   .content {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding: 1rem 2rem; } }
+    padding: 1rem 2rem 2rem; }
+
+  .submit-btn {
+    cursor: pointer; }
+    .submit-btn:hover {
+      background: #e4b4b4;
+      box-shadow: 2px 4px 10px 3px rgba(223, 165, 165, 0.6); } }
 @media (min-width: 968px) and (orientation: landscape) {
   main {
-    grid-template-columns: 55% 45%;
     grid-template-rows: 8rem auto; }
 
   .logo-container {
@@ -155,7 +161,8 @@ img {
       max-width: 100%; }
 
   .hero-image img {
-    height: 100vh; }
+    height: 100vh;
+    min-height: 100%; }
 
   .content {
     display: flex;
@@ -170,6 +177,24 @@ img {
       font-size: 4rem;
       max-width: 100%; }
     .content-text {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+
+  #email {
+    font-size: 1rem; }
+
+  .error-icon {
+    display: block;
+    right: 85px; }
+
+  .submit-btn {
+    height: 47.2px;
+    padding: 0 2rem; } }
+@media (min-width: 1200px) and (orientation: landscape) {
+  main {
+    grid-template-columns: 1fr auto; }
+
+  .hero-image img {
+    width: auto;
+    max-width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
