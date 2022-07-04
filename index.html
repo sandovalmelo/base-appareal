@@ -33,15 +33,15 @@
         <p class="content-text">Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-        <form id="form">
+        <form id="form" novalidate>
           <div class="form-group">
-            <input type="text" name="email" id="email" placeholder="Email Adrress">
+            <input type="email" name="email" id="email" placeholder="Email Adrress">
             <img src="./images/icon-error.svg" alt="Error Icon" class="error-icon">
             <button type="submit" class="submit-btn">
               <img src="./images/icon-arrow.svg" alt="Arrow Icon">
             </button>
           </div>
-          <p class="error-message">Please provide a valid email</p>
+          <p class="feedback-message"></p>
         </form>
       </div>
     </section>
